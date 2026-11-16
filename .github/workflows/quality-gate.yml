@@ -72,20 +72,4 @@ jobs:
       - name: Verify live Next.js + PostgreSQL endpoints
         env:
           DATABASE_URL: postgresql://eightx_ci:ephemeral_ci_password@localhost:5432/eightx_ci
-        run: |
-          npm run start -- -p 3000 &
-          SERVER_PID=$!
-          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
-
-          for i in $(seq 1 30); do
-            if curl -fsS http://127.0.0.1:3000/api/health >/dev/null 2>&1; then
-              break
-            fi
-            sleep 1
-          done
-
-          node scripts/verify-public-site.mjs http://127.0.0.1:3000
-          curl -fsS -X POST http://127.0.0.1:3000/api/signals \
-            -H 'content-type: application/json' \
-            -d '{"track":"Core Team","craft":"Product Design","shippedNote":"Verified CI Postgres write/read roundtrip.","alignmentHits":3}' \
-            | grep -q '"totalCount":3'
+        run: node scripts/ci-smoke-test.mjs
