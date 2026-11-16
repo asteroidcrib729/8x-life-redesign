@@ -92,4 +92,17 @@
   - Pushed public portfolio repository: `https://github.com/asteroidcrib729/8x-life-redesign` (`master`).
   - Configured encrypted `DATABASE_URL` (`production` & `preview`) on Vercel project `8x-life-redesign` (`prj_C73OncuyTiD3Crnmm1WDhodSrlSX`).
   - Note: `8x-life-redesign.vercel.app` was already claimed on Vercel (`alias_in_use`), so production is live at `https://8x-life-faraz.vercel.app` (and `https://8x-life-redesign-nine.vercel.app`) with `ssoProtection` disabled (`enabled: false`).
-  - Verified live production (`2026-11-17`) in Chrome DevTools across Desktop (`1440×900`) and Mobile (`390×844`): HTTP `200`, `/api/health` returned `{"ok":true,"database":"connected","counts":{"verticals":4,"roles":4,"signals":2}}`, zero console/hydration errors, zero horizontal overflow.
+
+## 6. Milestone 6: GitHub Actions CI/CD, Security Hardening & Dependabot (`2026-11-17`)
+
+- **GitHub Security Settings:** Enabled `vulnerability-alerts` and `dependabot_security_updates` alongside existing `secret_scanning` and `secret_scanning_push_protection` on `asteroidcrib729/8x-life-redesign`.
+- **Dependabot & CodeQL Config:** Added `.github/dependabot.yml` (weekly `npm` & `github-actions` updates targeting `master`, grouped `prisma`, `next-react`, `compatible-updates`, `Asia/Karachi`), `.github/codeql-config.yml`, `.github/tool-manifest.json` (SHA-256 pinned `gitleaks 8.30.1` & `actionlint 1.7.12`), and `.gitleaks.toml`.
+- **Workflows Created (`.github/workflows/`):**
+  - `codeql.yml` (CodeQL `javascript-typescript`, `security-extended`)
+  - `secret-scanning.yml` (`gitleaks` full git history + source scan)
+  - `dependency-security.yml` (`npm audit --package-lock-only --audit-level=moderate` + `dependency-review-action`)
+  - `prettier.yml` (`npm run format:check`)
+  - `workflow-validation.yml` (`actionlint` via `npm run lint:workflows`)
+  - `quality-gate.yml` (`format:check`, `lint`, `typecheck`, `build`, `prisma db push` + `seed` + live Next.js + `postgres:17-alpine` HTTP roundtrip)
+  - `public-release.yml` (`verify:public` anonymous public check for `https://8x-life-faraz.vercel.app`)
+- **Local Verification:** Passed `security:secrets`, `lint:workflows`, `format:check`, `lint`, `typecheck`, and `verify:public`.

@@ -1,0 +1,91 @@
+name: Quality Gate
+
+on:
+  pull_request:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: eightx_ci
+          POSTGRES_PASSWORD: ephemeral_ci_password
+          POSTGRES_DB: eightx_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U eightx_ci -d eightx_ci"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build Next.js and generate Prisma Client
+        run: npm run build
+        env:
+          DATABASE_URL: postgresql://eightx_ci:ephemeral_ci_password@localhost:5432/eightx_ci
+
+      - name: Push Prisma schema and seed disposable CI database
+        run: |
+          npx prisma db push
+          npm run db:seed
+        env:
+          DATABASE_URL: postgresql://eightx_ci:ephemeral_ci_password@localhost:5432/eightx_ci
+
+      - name: Verify live Next.js + PostgreSQL endpoints
+        env:
+          DATABASE_URL: postgresql://eightx_ci:ephemeral_ci_password@localhost:5432/eightx_ci
+        run: |
+          npm run start -- -p 3000 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3000/api/health >/dev/null 2>&1; then
+              break
+            fi
+            sleep 1
+          done
+
+          node scripts/verify-public-site.mjs http://127.0.0.1:3000
+          curl -fsS -X POST http://127.0.0.1:3000/api/signals \
+            -H 'content-type: application/json' \
+            -d '{"track":"Core Team","craft":"Product Design","shippedNote":"Verified CI Postgres write/read roundtrip.","alignmentHits":3}' \
+            | grep -q '"totalCount":3'

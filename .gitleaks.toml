@@ -1,0 +1,13 @@
+title = "8x.life redesign gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Ignore local tooling downloads, Next.js build output, and generated dependencies"
+paths = [
+  '''^\.local/''',
+  '''^\.next/''',
+  '''^node_modules/''',
+  '''^src/generated/''',
+]
