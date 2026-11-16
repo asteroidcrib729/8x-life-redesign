@@ -18,7 +18,7 @@
 ### Typography Quirks
 
 - `body` applies `font-family: 'Inter Tight', system-ui, sans-serif;` and `text-transform: lowercase;` globally, creating an immediate anti-corporate, conversational voice.
-- Labels, card metadata, and footer columns override this to `uppercase` (`15px`–`22px`), while article titles reset to normal sentence case (`text-transform: none`).
+- Labels, card metadata, and footer columns override this to `uppercase` (`15px`-`22px`), while article titles reset to normal sentence case (`text-transform: none`).
 
 ---
 
@@ -27,20 +27,20 @@
 ### Color Palette
 
 - **Paper Ground (`--bg`):** `#fcf7f0` (warm off-white editorial paper)
-- **Ink / Dark Slate (`--ink` / `--section-ink`):** `#1c2121` (deep charcoal slate — softer and warmer than pure `#000`)
+- **Ink / Dark Slate (`--ink` / `--section-ink`):** `#1c2121` (deep charcoal slate, softer and warmer than pure `#000`)
 - **Primary Accent & Default Footer (`--e2vc-accent` / `--footer-bg`):** `#3451f5` (royal cobalt blue)
 - **Architectural Hairline Grids:**
   - Light surface (`--grid`): `rgba(28, 33, 33, 0.15)`
   - Dark footer (`--footer-grid`): `rgba(255, 255, 255, 0.15)`
 - **Observed Editorial Card Hover Accents (`--card-color`):**
-  - `#E4FC53` (acid lime — also cycles onto the footer when interacting with Spacejump, flipping footer ink/grid to dark via `:root[data-footer-tone='light']`)
+  - `#E4FC53` (acid lime, also cycles onto the footer when interacting with Spacejump, flipping footer ink/grid to dark via `:root[data-footer-tone='light']`)
   - `#31FE6A` (neon green)
   - `#C294FF` (soft lavender)
 
 ### Spatial & Structural Geometry
 
 - **Desktop Gutter (`--gutter-x`):** `64px`
-- **Border Radius:** **`0px` everywhere** — strict brutalist/editorial sharp rectangles across images, tags, buttons, and hairline dividers.
+- **Border Radius:** **`0px` everywhere:** strict brutalist/editorial sharp rectangles across images, tags, buttons, and hairline dividers.
 - **Architectural 4-Column Grid:** Vertical `1px` hairline columns run continuously down the page, anchoring every headline, transition curtain, staggered card, and footer block to a visible structural scaffold.
 
 ---
@@ -73,10 +73,10 @@
 - **Layout:** 12-column asymmetric staggered grid on `#1c2121`; even cards are offset downward by `margin-top: 40vh` on desktop, creating editorial breathing room and natural visual pacing.
 - **Card Anatomy:** Sharp `0px` photography, overlapping `#1c2121` rectangular badge tags (`15px` uppercase, `padding: 0.65em 1.2em`), per-card `--card-color` accent, and a scroll-triggered headline (`24px`, `font-weight: 500`, `line-height: 1.25`).
 - **Content Pattern (12 Founder Stories):** Each card pairs a crisp entity tag + one concrete proof tag + one sharp thesis headline, e.g.:
-  - `INSIDER ONE` | `RAISED $750M` — _"AI marketing revolution: A unicorn in 50 countries"_
-  - `FAL` | `RAISED $1.65B` — _"Powering the next generation of generative media applications"_
-  - `BILLIONTOONE` | `NASDAQ: BLLN` — _"A Nasdaq-listed unicorn transforming prenatal diagnostics"_
-  - `LOOM GAMES` | `EXIT $1.2B` — _"How Turkey’s gaming ecosystem creates global category leaders"_
+  - `INSIDER ONE` | `RAISED $750M`: _"AI marketing revolution: A unicorn in 50 countries"_
+  - `FAL` | `RAISED $1.65B`: _"Powering the next generation of generative media applications"_
+  - `BILLIONTOONE` | `NASDAQ: BLLN`: _"A Nasdaq-listed unicorn transforming prenatal diagnostics"_
+  - `LOOM GAMES` | `EXIT $1.2B`: _"How Turkey’s gaming ecosystem creates global category leaders"_
   - _(plus Carbon Health, Daytona, Ubicloud, Cypher Games, Arf & Huma, Firefly, Plum, Agave Games)_
 
 ### Section 4: Interactive Matter.js Physics Footer (`footer#contact`)
@@ -128,7 +128,7 @@ The assignment asks us to _"name what its style is actually doing rather than co
 | :---------------------------------------------------------------------------- | :---------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Warm `#fcf7f0` paper + `#1c2121` slate + `1px` 4-col grid + `0px` corners** | **Keep & Adapt**              | Replaces `8x.life`'s generic dark-glow SaaS aesthetic with sharp editorial credibility, directly harmonizing with `8x.careers`'s existing editorial cream direction.                                                                    |
 | **Rough.js hand-drawn highlights (`#3451f5` or 8x accent)**                   | **Keep (Sparingly)**          | Ideal for circling or underlining key self-selection phrases (e.g., _"the right people"_, _"work you can do"_) to add human warmth.                                                                                                     |
-| **Angled / Draggable Strip of Real People**                                   | **Adapt**                     | Replace `e2.vc`'s portfolio founders with real 8x builders, product sprints, and global creators—showing life inside 8x immediately above the fold.                                                                                     |
+| **Angled / Draggable Strip of Real People**                                   | **Adapt**                     | Replace `e2.vc`'s portfolio founders with real 8x builders, product sprints, and global creators, showing life inside 8x immediately above the fold.                                                                                    |
 | **Column Curtain + Staggered Dark Editorial Proof Cards**                     | **Adapt**                     | Use the light-to-dark shift to transition from _"Why 8x & who belongs here"_ into concrete proof of 8x's 4 live verticals (`Social`, `LinkedIn`, `Hiring`, `Sales`) and real team stories.                                              |
 | **Full-screen Menu + Mobile Parity**                                          | **Adapt (Fix `8x.life` gap)** | Gives mobile users immediate navigation (`Manifesto`, `How We Work`, `Verticals`, `Team`, `Open Roles`), fixing `8x.life`'s broken mobile nav, while keeping primary CTAs visible in the bar.                                           |
 | **All-lowercase `text-transform: lowercase` everywhere**                      | **Modify / Soften**           | `e2.vc`'s lowercase works for VC coolness, but 8x's brand voice is direct, high-agency, and crisp (`"Human orchestration"`). Use natural sentence case for readability + uppercase mono/tags for structure.                             |

@@ -33,7 +33,7 @@ const MANIFESTO_LEDGER = [
   {
     index: "04",
     statement:
-      "The human in the loop becomes the most valuable—and bottlenecked—resource.",
+      "The human in the loop becomes the most valuable, and bottlenecked, resource.",
     reality: "Software without orchestrated human accountability stalls at scale.",
   },
   {
@@ -45,7 +45,8 @@ const MANIFESTO_LEDGER = [
   {
     index: "06",
     statement: "Implications are global and generational.",
-    reality: "50+ countries today—built around proven capability, not your ZIP code.",
+    reality:
+      "50+ countries today, built around proven capability rather than your ZIP code.",
   },
 ];
 
@@ -147,7 +148,7 @@ export default function HomePage() {
                   <span className="font-medium text-[#1c2121]">
                     Social, LinkedIn, Hiring, and Sales
                   </span>
-                  . This page is for the lean core team building that machine—not
+                  . This page is for the lean core team building that machine: no
                   corporate theater, and not a generic careers portal.
                 </p>
 
@@ -205,7 +206,7 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="max-w-sm text-[14px] leading-[1.5] text-[#1c2121]/70">
-                Six core beliefs behind 8x—paired with what they actually mean for the
+                Six core beliefs behind 8x, paired with what they actually mean for the
                 people building our systems.
               </p>
             </div>
@@ -273,7 +274,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:items-end">
               <div className="md:col-span-8">
                 <p className="font-mono text-[12px] tracking-[0.08em] text-[#E4FC53] uppercase">
-                  03 / LIVE VERTICALS — POSTGRESQL CATALOG
+                  03 / LIVE VERTICALS · POSTGRESQL CATALOG
                 </p>
                 <h2
                   id="verticals-title"

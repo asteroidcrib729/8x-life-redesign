@@ -42,7 +42,7 @@
 - Designed the Iteration 1 homepage blueprint:
   1. Responsive Header + Mobile `MENU ✳` Overlay (fixes `8x.life` mobile nav defect) + clear `Core Team` vs `Platform` routing.
   2. Editorial Hero on `#fcf7f0` 4-column grid + Rough.js callout + interactive proof/human strip.
-  3. Numbered `01–06` Manifesto Ledger (preserving all 6 original claims with concrete builder context).
+  3. Numbered `01-06` Manifesto Ledger (preserving all 6 original claims with concrete builder context).
   4. Explicit **Self-Selection Filter** (`You'll love building at 8x if...` / `Please self-select out if...`).
   5. Column-curtain transition into `#1c2121` staggered dark cards for the 4 live verticals (`Social`, `LinkedIn`, `Hiring`, `Sales` with `01 -> 05` meeting factory tags; `"Not unlocked yet"` removed).
   6. Team (`Jaka Bavdek`, `Theo Bui`) + transparent **3-step Evidence-First Hiring** section.
@@ -86,7 +86,7 @@
 ## 5. Milestone 5: End-to-End Polish, Production Prisma DB, Prettier/VS Code & GitHub (`2026-11-16`)
 
 - **Production Database (`8x-life-redesign-production`):** Provisioned via Prisma MCP (`db_l0y7zir5h55k1grucv9tg8vp`, `ap-southeast-1`), schema pushed and seeded (`4` verticals, `4` roles, `2` signals). Verified no Vercel Marketplace Prisma integration is required.
-- **End-to-End Product Upgrades:** Added `src/app/icon.svg`, `src/app/opengraph-image.tsx`, `HeroPathToggle` (`Core Team` vs `250k+ Platform`), interactive expandable `VerticalShowcase` pipeline inspection, dynamic `0/3`–`3/3` fit verdict in `FitAndSignalSection`, micro-telemetry bars on `HumanProofStrip`, `metadataBase` in `layout.tsx`, and portfolio [README.md](file:///c:/Users/DESKTOP-Q2TMP8U/Downloads/Source-Code/8x/README.md).
+- **End-to-End Product Upgrades:** Added `src/app/icon.svg`, `src/app/opengraph-image.tsx`, `HeroPathToggle` (`Core Team` vs `250k+ Platform`), interactive expandable `VerticalShowcase` pipeline inspection, dynamic `0/3` to `3/3` fit verdict in `FitAndSignalSection`, micro-telemetry bars on `HumanProofStrip`, `metadataBase` in `layout.tsx`, and portfolio [README.md](file:///c:/Users/DESKTOP-Q2TMP8U/Downloads/Source-Code/8x/README.md).
 - **IDE, Formatting & Env Hygiene:** Added `.vscode/settings.json`, `.vscode/extensions.json`, `.prettierrc`, `.prettierignore`, `npm run format`, `npm run format:check`, and tracked secret-free `.env.example` (`!.env.example` in `.gitignore`).
 - **GitHub & Production Deployment (`2026-11-16` / `2026-11-17`):**
   - Pushed public portfolio repository: `https://github.com/asteroidcrib729/8x-life-redesign` (`master`).

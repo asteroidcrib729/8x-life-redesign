@@ -29,7 +29,7 @@ const THRIVE_ITEMS = [
     id: "outcomes",
     title: "You care about distribution and business truth.",
     detail:
-      "Design and engineering are means to outcomes—creators paid, buyers converted, right candidates hired.",
+      "Design and engineering are means to outcomes: creators paid, buyers converted, right candidates hired.",
   },
 ];
 
@@ -132,7 +132,7 @@ export function FitAndSignalSection({
         <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-4 md:items-end">
           <div className="md:col-span-3">
             <p className="font-mono text-[12px] tracking-[0.08em] text-[#2350FF] uppercase">
-              02 / HONEST FILTER — BEFORE YOU APPLY
+              02 / HONEST FILTER · BEFORE YOU APPLY
             </p>
             <h2
               id="fit-title"
@@ -333,7 +333,7 @@ export function FitAndSignalSection({
                 htmlFor="shipped-note"
                 className="mb-1.5 block font-mono text-[11px] tracking-[0.06em] text-[#1c2121]/70 uppercase"
               >
-                One-line shipped proof (8–220 chars)
+                One-line shipped proof (8-220 chars)
               </label>
               <textarea
                 id="shipped-note"

@@ -61,7 +61,7 @@ export async function POST(request: Request) {
     if (shippedNote.length < 8 || shippedNote.length > 220) {
       return Response.json(
         {
-          error: "Share a concise 8–220 character note on something real you shipped.",
+          error: "Share a concise 8-220 character note on something real you shipped.",
         },
         { status: 400 }
       );

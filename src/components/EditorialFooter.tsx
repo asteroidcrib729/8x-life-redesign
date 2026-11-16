@@ -68,15 +68,15 @@ export function EditorialFooter() {
             <div className="mt-4 space-y-2.5 font-mono text-[15px] tracking-[0.04em] uppercase md:text-[17px]">
               <div className="flex items-center justify-between border-b border-current/15 pb-2">
                 <span>SAN FRANCISCO</span>
-                <span>{clocks?.sf ?? "--:--"} PST</span>
+                <span>{clocks?.sf ?? "··:··"} PST</span>
               </div>
               <div className="flex items-center justify-between border-b border-current/15 pb-2">
                 <span>LONDON</span>
-                <span>{clocks?.london ?? "--:--"} GMT</span>
+                <span>{clocks?.london ?? "··:··"} GMT</span>
               </div>
               <div className="flex items-center justify-between pb-1">
                 <span>GLOBAL REMOTE</span>
-                <span>{clocks?.karachi ?? "--:--"} PKT</span>
+                <span>{clocks?.karachi ?? "··:··"} PKT</span>
               </div>
             </div>
 

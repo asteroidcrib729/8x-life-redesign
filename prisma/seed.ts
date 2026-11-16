@@ -21,7 +21,7 @@ const VERTICALS = [
     accentHex: "#3D7BFF",
     headline: "Real people. Real reach.",
     summary:
-      "Consumer creator distribution across TikTok, Instagram, and YouTube—built on software that matches, briefs, tracks, and pays global creators at scale.",
+      "Consumer creator distribution across TikTok, Instagram, and YouTube, built on software that matches, briefs, tracks, and pays global creators at scale.",
     builderChallenge:
       "Designing cross-border creator attribution, automated brief QA, and instant payouts across 140+ countries without losing human authenticity.",
     funnelSteps: [
@@ -42,7 +42,7 @@ const VERTICALS = [
     accentHex: "#7A5CFF",
     headline: "The voices buyers trust.",
     summary:
-      "B2B demand on LinkedIn and X powered by credible operators and technical voices—not faceless corporate ad spend.",
+      "B2B demand on LinkedIn and X powered by credible operators and technical voices, not faceless corporate ad spend.",
     builderChallenge:
       "Modeling B2B buyer trust, orchestrating high-signal creator sponsorships, and tying editorial reach directly to pipeline.",
     funnelSteps: [
@@ -62,7 +62,7 @@ const VERTICALS = [
     accentHex: "#FFB01F",
     headline: "Get hired for the work you can do.",
     summary:
-      "Evidence-first hiring at 8x and partner companies—replacing keyword resume filters with timed, real-world execution challenges and walkthroughs.",
+      "Evidence-first hiring at 8x and partner companies, replacing keyword resume filters with timed, real-world execution challenges and walkthroughs.",
     builderChallenge:
       "Building an evaluation environment where raw craft, judgement, and reasoning beat pedigree or polished interview scripts.",
     funnelSteps: [
@@ -82,7 +82,7 @@ const VERTICALS = [
     accentHex: "#12B5D6",
     headline: "Qualified meetings, on your calendar.",
     summary:
-      "Managed outbound and cold calling orchestrated end-to-end—combining human persistence with tight systems telemetry.",
+      "Managed outbound and cold calling orchestrated end-to-end, combining human persistence with tight systems telemetry.",
     builderChallenge:
       "Engineering every handoff in the meeting factory so dialers, scripts, QA, and scheduling compound conversion.",
     funnelSteps: [
@@ -105,7 +105,7 @@ const CORE_ROLES = [
     location: "Global Remote (50+ countries)",
     engagement: "Core Team · Full-time",
     whyHard:
-      "You own end-to-end product surfaces across hiring, creator workflows, and outbound ops—moving from problem teardown to shippable interface in days, not quarters.",
+      "You own end-to-end product surfaces across hiring, creator workflows, and outbound ops, moving from problem teardown to shippable interface in days, not quarters.",
     proofPrompt: "Redesign a live surface, show what's broken, and explain why.",
     applyUrl: "https://www.8x.careers/join",
     sortOrder: 1,
@@ -117,7 +117,7 @@ const CORE_ROLES = [
     location: "Global Remote (Async + High Overlap)",
     engagement: "Core Team · Full-time",
     whyHard:
-      "You build orchestration rails serving 250k+ humans across 140+ countries—shipping TypeScript, Next.js, Postgres, and reliable payout/matching automation.",
+      "You build orchestration rails serving 250k+ humans across 140+ countries, shipping TypeScript, Next.js, Postgres, and reliable payout and matching automation.",
     proofPrompt: "Ship a complete vertical slice with real data and zero fluff.",
     applyUrl: "https://www.8x.careers/join",
     sortOrder: 2,
@@ -153,7 +153,7 @@ const INITIAL_SIGNALS = [
     track: "Core Team",
     craft: "Product Design",
     shippedNote:
-      "Rebuilt a hiring funnel around work samples instead of PDFs—cut screening noise in half.",
+      "Rebuilt a hiring funnel around work samples instead of PDFs, cutting screening noise in half.",
     alignmentHits: 3,
   },
   {

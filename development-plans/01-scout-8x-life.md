@@ -17,10 +17,10 @@
 
 ### Font System (`@font-face` preloaded `.woff2`)
 
-1. **Archivo** (`weight: 100 900`, `font-stretch: 62% 125%`) — `--font-display`. Used heavily condensed (`font-stretch: 62%`, `font-weight: 900`) for display headlines and large stats.
-2. **Hanken Grotesk** (`weight: 100 900`) — `--font-sans`. Default UI and body copy font inside `.home-module__iyP_nG__root`.
-3. **Geist Mono** (`weight: 100 900`) — `--font-geist-mono` / `--font-mono`.
-4. **Newsreader** (`weight: 200 800`, normal & italic) — loaded in the root layout (`--font-newsreader` / `--font-serif` on `body`), overridden by `--font-sans` inside the `8x.life` home module, and actively used on `8x.careers`.
+1. **Archivo** (`weight: 100 900`, `font-stretch: 62% 125%`), `--font-display`. Used heavily condensed (`font-stretch: 62%`, `font-weight: 900`) for display headlines and large stats.
+2. **Hanken Grotesk** (`weight: 100 900`), `--font-sans`. Default UI and body copy font inside `.home-module__iyP_nG__root`.
+3. **Geist Mono** (`weight: 100 900`), `--font-geist-mono` / `--font-mono`.
+4. **Newsreader** (`weight: 200 800`, normal & italic), loaded in the root layout (`--font-newsreader` / `--font-serif` on `body`), overridden by `--font-sans` inside the `8x.life` home module, and actively used on `8x.careers`.
 
 ---
 
@@ -39,9 +39,9 @@
 ### Typography & Scale
 
 - **Hero `h1`:** `Archivo`, `900`, `font-stretch: 62%`, `font-size: min(12cqw, 18.4svh)` (~`165px` at `1440×900`), `line-height: 0.84`, `letter-spacing: -0.005em`, uppercase.
-- **Vertical `h2`:** `Archivo`, `900`, `font-stretch: 62%`, `font-size: min(8cqw, 12svh)` (computed `60.64px`–`74.79px`), `line-height: 0.86`.
+- **Vertical `h2`:** `Archivo`, `900`, `font-stretch: 62%`, `font-size: min(8cqw, 12svh)` (computed `60.64px`-`74.79px`), `line-height: 0.86`.
 - **Team `h2` (Founder Names):** `Archivo`, `900`, `font-stretch: 62%`, `calc(7.8 * min(1cqw, 19.2px))` (~`112px` at `1440px`), `line-height: 0.92`.
-- **Body / Nav / Pill CTAs:** `Hanken Grotesk`, `600`–`700`, `--t: clamp(17px, calc(.62cqw + 7px), 26px)` (~`17px` at `1440px`).
+- **Body / Nav / Pill CTAs:** `Hanken Grotesk`, `600`-`700`, `--t: clamp(17px, calc(.62cqw + 7px), 26px)` (~`17px` at `1440px`).
 - **Footer Links:** `Hanken Grotesk`, `600`, `18px / 1.3`, `rgb(11 11 12 / 0.92)`.
 
 ### Spacing, Geometry & Surfaces
@@ -65,8 +65,8 @@
   - **H1:** `THE` / `HUMAN` / `COMPANY` (3 stacked lines; `HUMAN` uses a multi-stop gradient fill transitioning via CSS variables `--w0`..`--w3` over `1.2s`).
   - **Subtitle:** `HUMAN ORCHESTRATION` / `FOR BUSINESS OUTCOMES`
   - **Two Key Facts:**
-    - `250k+` — `humans managed in marketing and engineering.`
-    - `50+` — `countries`
+    - `250k+`: `humans managed in marketing and engineering.`
+    - `50+`: `countries`
 - **Motion:** Four radial/linear gradient `.ground` layers cycle through Social (blue), LinkedIn (violet), Hiring (amber), and Sales (cyan) while slowly breathing (`scale(1) -> 1.09` over 19s). On scroll, the sticky hero scales down slightly (`calc(1 - var(--c) * .055)`) and darkens.
 
 ### Section 2: Manifesto (`section#manifesto`)
@@ -115,8 +115,8 @@ Five full-bleed color-blocked vertical bands with stepped top edges and alternat
 
 - **H2:** `Team`
 - **Two Staggered Founder Portraits + Oversized Names:**
-  - `JAKA BAVDEK` — `Co-founder, CEO` (links to `https://jakabavdek.com/`, `jaka.webp` on left)
-  - `THEO BUI` — `Co-founder, CTO` (links to `https://www.theobui.com/`, `theo.webp` staggered lower-right)
+  - `JAKA BAVDEK`: `Co-founder, CEO` (links to `https://jakabavdek.com/`, `jaka.webp` on left)
+  - `THEO BUI`: `Co-founder, CTO` (links to `https://www.theobui.com/`, `theo.webp` staggered lower-right)
 - **Hiring CTA:** `We're hiring.` + circular `#ffb01f` arrow button -> `https://www.8x.careers/join`.
 
 ### Section 5: Footer (`<footer>`)
@@ -135,11 +135,11 @@ Five full-bleed color-blocked vertical bands with stepped top edges and alternat
 
 `8x.life` has **zero internal subroutes** (`/about`, `/culture`, `/team`, etc.). Everything externalizes to sister domains:
 
-- `https://www.8x.careers/join` & `/about` — Editorial cream aesthetic (`Newsreader` serif, floating dark pill topbar, `Join the team` vs `Join the platform` toggle, explanation of evidence-first assignments).
-- `https://www.8x.careers/` — Main hiring platform home (`Engineering, Design, Marketing & Operations`).
-- `https://www.8x.social/for-brands` — Consumer creator marketing.
-- `https://8x.business/` — B2B LinkedIn & X creator sponsorships.
-- `https://8x.sale/` — Managed outbound sales force.
+- `https://www.8x.careers/join` & `/about`: Editorial cream aesthetic (`Newsreader` serif, floating dark pill topbar, `Join the team` vs `Join the platform` toggle, explanation of evidence-first assignments).
+- `https://www.8x.careers/`: Main hiring platform home (`Engineering, Design, Marketing & Operations`).
+- `https://www.8x.social/for-brands`: Consumer creator marketing.
+- `https://8x.business/`: B2B LinkedIn & X creator sponsorships.
+- `https://8x.sale/`: Managed outbound sales force.
 
 ---
 
@@ -164,7 +164,7 @@ Evaluating `8x.life` against its stated job (_"make the right people want to wor
 
 ### What Is Vague, Buried, or Missing for a Candidate
 
-1. **Who is this site actually for—core builders or platform talent?**  
+1. **Who is this site actually for, core builders or platform talent?**  
    The hero says `"250k+ humans managed in marketing and engineering"`, and the CTA says `"Earn with 8x"`. A Product Designer or Engineer applying to build 8x itself can easily confuse _building the orchestration platform_ with _being a creator/caller on the network_ (a distinction buried over on `8x.careers/join` via the `Join the team` vs. `Join the platform` toggle).
 2. **Zero self-selection criteria (nothing pushes the wrong people out):**  
    There is no articulation of 8x's operating pace, expectations, autonomy, or what kind of person _hates_ working at 8x. High-agency builders and credential-chasers come away with the exact same impression.
@@ -173,4 +173,4 @@ Evaluating `8x.life` against its stated job (_"make the right people want to wor
 4. **Generic Team section:**  
    Showing only two founder portraits (`Jaka Bavdek`, `Theo Bui`) with external personal links and a tiny `"We're hiring."` button reveals nothing about the team a candidate will actually join, what craft looks like inside 8x, or what the founders actually believe about building.
 5. **Evidence-first hiring is buried in a 6-word subcopy:**  
-   One of 8x's strongest differentiators—`"Evidence-first hiring, at 8x and partner companies"`—is tucked inside the `8x Hiring` product banner instead of being explained clearly to candidates _about to apply to 8x itself_.
+   One of 8x's strongest differentiators (`"Evidence-first hiring, at 8x and partner companies"`)is tucked inside the `8x Hiring` product banner instead of being explained clearly to candidates _about to apply to 8x itself_.

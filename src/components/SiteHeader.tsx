@@ -13,21 +13,21 @@ const CORE_LINKS = [
 
 const PLATFORM_LINKS = [
   {
-    label: "8x.careers — apply or join",
+    label: "8x.careers: apply or join",
     href: "https://www.8x.careers/join",
     tag: "HIRING",
   },
   {
-    label: "8x.social — consumer creators",
+    label: "8x.social: consumer creators",
     href: "https://8x.social/",
     tag: "140+ COUNTRIES",
   },
   {
-    label: "8x.business — b2b voices",
+    label: "8x.business: b2b voices",
     href: "https://8x.business/",
     tag: "LINKEDIN & X",
   },
-  { label: "8x.sale — meeting factory", href: "https://8x.sale/", tag: "OUTBOUND" },
+  { label: "8x.sale: meeting factory", href: "https://8x.sale/", tag: "OUTBOUND" },
 ];
 
 export function SiteHeader() {
@@ -137,7 +137,7 @@ export function SiteHeader() {
           <div className="mx-auto grid w-full max-w-[1440px] flex-1 grid-cols-1 gap-12 px-5 py-10 md:grid-cols-2 md:gap-16 md:px-16 md:py-16">
             <div>
               <p className="mb-6 font-mono text-[12px] tracking-[0.1em] text-[#E4FC53] uppercase">
-                Build 8x — Core Team
+                Build 8x: Core Team
               </p>
               <ul className="space-y-3 md:space-y-4">
                 {CORE_LINKS.map((item) => (

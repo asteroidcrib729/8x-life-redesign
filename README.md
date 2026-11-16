@@ -1,6 +1,6 @@
-# 8x.life Redesign — Product Design & Engineering Case Study
+# 8x.life Redesign: Product Design & Engineering Case Study
 
-> **Assignment:** Redesign [`8x.life`](https://8x.life/) in the editorial style of [`e2.vc`](https://e2.vc/)—making the right builders want to work at 8x and giving the wrong people a clear reason to self-select out.
+> **Assignment:** Redesign [`8x.life`](https://8x.life/) in the editorial style of [`e2.vc`](https://e2.vc/) to make the right builders want to work at 8x and give the wrong people a clear reason to self-select out.
 
 Live production URL: **[`8x-life-faraz.vercel.app`](https://8x-life-faraz.vercel.app)**
 
@@ -13,7 +13,7 @@ Live production URL: **[`8x-life-faraz.vercel.app`](https://8x-life-faraz.vercel
 2. **Zero Self-Selection Criteria:**  
    Nothing told low-agency or consensus-driven candidates why they would dislike working at 8x.
 3. **Product Billboard Over Candidate Reality:**  
-   80% of the vertical scroll showcased client-facing product banners—including two full-bleed `"NOT UNLOCKED YET"` (`8X EMAIL`, `8X GLOBAL`) placeholders—while burying _"Evidence-first hiring"_ in a 6-word subline.
+   80% of the vertical scroll showcased client-facing product banners (including two full-bleed `"NOT UNLOCKED YET"` placeholders for `8X EMAIL` and `8X GLOBAL`) while burying _"Evidence-first hiring"_ in a 6-word subline.
 4. **Mobile Navigation Defect (`390×844`):**  
    Top navigation links (`Manifesto`, `Team`, `Jobs`) were hidden below `820px` with no mobile menu fallback, and hero metrics clipped near the `844px` fold.
 
