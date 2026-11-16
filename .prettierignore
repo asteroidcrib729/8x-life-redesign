@@ -1,0 +1,13 @@
+.next
+node_modules
+src/generated
+prisma/migrations
+coverage
+package-lock.json
+.env
+.env.*
+!.env.example
+.agents
+.claude
+.windsurf
+skills-lock.json

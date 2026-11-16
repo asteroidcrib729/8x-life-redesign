@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Vertical {
+  id               String   @id @default(cuid())
+  slug             String   @unique
+  name             String
+  tagLabel         String
+  proofMetric      String
+  accentHex        String
+  headline         String
+  summary          String
+  builderChallenge String
+  funnelSteps      String[]
+  externalUrl      String
+  sortOrder        Int      @default(0)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model CoreRole {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  title        String
+  department   String
+  location     String
+  engagement   String
+  whyHard      String
+  proofPrompt  String
+  applyUrl     String
+  isActive     Boolean  @default(true)
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model CandidateSignal {
+  id            String   @id @default(cuid())
+  track         String
+  craft         String
+  shippedNote   String
+  alignmentHits Int      @default(0)
+  createdAt     DateTime @default(now())
+}
