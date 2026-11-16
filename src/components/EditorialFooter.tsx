@@ -236,7 +236,7 @@ export function EditorialFooter() {
             <p
               className={`font-mono text-[12px] tracking-[0.06em] uppercase ${mutedClass}`}
             >
-              © 2026 8X · THE HUMAN COMPANY · REDESIGN ITERATION 01
+              © 2026 8X · THE HUMAN COMPANY
             </p>
           </div>
         </div>

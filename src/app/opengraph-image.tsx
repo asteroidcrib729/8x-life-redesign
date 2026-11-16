@@ -95,7 +95,7 @@ export default function OpenGraphImage() {
         }}
       >
         <span>8X SOCIAL · 8X LINKEDIN · 8X HIRING · 8X SALES</span>
-        <span style={{ color: "#2350FF", fontWeight: 700 }}>8X.LIFE REDESIGN</span>
+        <span style={{ color: "#2350FF", fontWeight: 700 }}>8X.LIFE</span>
       </div>
     </div>,
     {
