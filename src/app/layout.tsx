@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://8x-life-redesign.vercel.app"),
+  metadataBase: new URL("https://8x-life-faraz.vercel.app"),
   title: "8x | Life at 8x — The Human Company",
   description:
     "250k+ humans across 50+ countries, orchestrated by a lean, high-agency core team. See how we build 8x Social, LinkedIn, Hiring, and Sales—and whether you belong here.",

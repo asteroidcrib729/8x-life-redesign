@@ -2,7 +2,7 @@
 
 > **Assignment:** Redesign [`8x.life`](https://8x.life/) in the editorial style of [`e2.vc`](https://e2.vc/)—making the right builders want to work at 8x and giving the wrong people a clear reason to self-select out.
 
-Live production URL: **[`8x-life-redesign.vercel.app`](https://8x-life-redesign.vercel.app)**
+Live production URL: **[`8x-life-faraz.vercel.app`](https://8x-life-faraz.vercel.app)**
 
 ---
 
