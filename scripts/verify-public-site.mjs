@@ -4,8 +4,10 @@ const siteUrl = (process.argv[2] || "https://8x-life-faraz.vercel.app").replace(
 );
 
 async function checkEndpoint(url, { expectJson = false, expectImage = false } = {}) {
+  console.log(`-> GET ${url}`);
   const res = await fetch(url, {
     redirect: "manual",
+    signal: AbortSignal.timeout(15_000),
     headers: { "user-agent": "8x-life-redesign-public-check/1.0" },
   });
 

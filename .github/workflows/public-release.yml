@@ -47,4 +47,4 @@ jobs:
       - name: Verify anonymous public access
         env:
           PUBLIC_RELEASE_URL: ${{ inputs.site_url || 'https://8x-life-faraz.vercel.app' }}
-        run: npm run verify:public -- "$PUBLIC_RELEASE_URL"
+        run: node --dns-result-order=ipv4first scripts/verify-public-site.mjs "$PUBLIC_RELEASE_URL"
